@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/map.css">
+		<title>信用卡支付</title>
+		<style>
+			.wrapper {
+				width: 100%;
+				font-size: .8em;
+				text-align: center;
+			}
+			.lds-spinner {
+				display: inline-block;
+				width: 80px;
+				height: 50px;
+				margin-top: 20%;
+				margin-bottom: 10%;
+				margin-left: auto;
+				margin-right: auto;
+			  }
+			  .lds-spinner div {
+				transform-origin: 40px 40px;
+				animation: lds-spinner 1.2s linear infinite;
+			  }
+			  .lds-spinner div:after {
+				content: " ";
+				display: block;
+				position: absolute;
+				top: 3px;
+				left: 37px;
+				width: 6px;
+				height: 15px;
+				border-radius: 20%;
+				background: #000;
+			  }
+			  .lds-spinner div:nth-child(1) {
+				transform: rotate(0deg);
+				animation-delay: -1.1s;
+			  }
+			  .lds-spinner div:nth-child(2) {
+				transform: rotate(30deg);
+				animation-delay: -1s;
+			  }
+			  .lds-spinner div:nth-child(3) {
+				transform: rotate(60deg);
+				animation-delay: -0.9s;
+			  }
+			  .lds-spinner div:nth-child(4) {
+				transform: rotate(90deg);
+				animation-delay: -0.8s;
+			  }
+			  .lds-spinner div:nth-child(5) {
+				transform: rotate(120deg);
+				animation-delay: -0.7s;
+			  }
+			  .lds-spinner div:nth-child(6) {
+				transform: rotate(150deg);
+				animation-delay: -0.6s;
+			  }
+			  .lds-spinner div:nth-child(7) {
+				transform: rotate(180deg);
+				animation-delay: -0.5s;
+			  }
+			  .lds-spinner div:nth-child(8) {
+				transform: rotate(210deg);
+				animation-delay: -0.4s;
+			  }
+			  .lds-spinner div:nth-child(9) {
+				transform: rotate(240deg);
+				animation-delay: -0.3s;
+			  }
+			  .lds-spinner div:nth-child(10) {
+				transform: rotate(270deg);
+				animation-delay: -0.2s;
+			  }
+			  .lds-spinner div:nth-child(11) {
+				transform: rotate(300deg);
+				animation-delay: -0.1s;
+			  }
+			  .lds-spinner div:nth-child(12) {
+				transform: rotate(330deg);
+				animation-delay: 0s;
+			  }
+			  @keyframes lds-spinner {
+				0% {
+				  opacity: 1;
+				}
+				100% {
+				  opacity: 0;
+				}
+			  }
+		</style>
+	</head>
+	<body> 
+		<div class="wrapper">
+			<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+			<div><p>正在加载支付界面...</p></div>
+		</div>
+	<script src="./js/jquery.min.js"></script>
+	<script src="https://js.stripe.com/v3/"></script>
+	<script>
+			console.log('fetching stripe api...')
+			let url = new URL(window.location.href);
+			let params = url.searchParams
+			let Authorization = params.get("isLogin");//用户token
+			let billno = params.get("no")
+			console.log({Authorization}, {billno})
+			
+			const stripe = Stripe('pk_test_42xi7lAoc2wOsFfmZOq7etPS005IDp2SJJ')
+			fetch(`http://app1.ahomely.com.au:8091/api/pay/stripe/`, {
+				method: 'POST',
+				headers: {
+					"Authorization": Authorization,
+					"Content-Type": "application/x-www-form-urlencoded"				
+				},
+				body: `no=${billno}`
+			})
+			.then(response => {
+				console.log('response: ', response)
+				return response.json()
+			})
+			.then(result => {
+				const sessionId = result.msg
+				console.log({sessionId})
+				return stripe.redirectToCheckout({sessionId})
+			})
+			.then(result => {
+				console.log('after stripe redirection')
+				if(result.error) {
+					console.log('redirect to checkout failed due to ', result.error.message)
+				}
+			})
+			.catch(error => {
+				console.log('error: ', error)
+			})
+		
+
+	</script>
+	</body>
+</html>

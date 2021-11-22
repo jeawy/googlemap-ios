@@ -450,15 +450,7 @@
 			<array>
 				<dict>
 					<key>class</key>
-					<string>TestModule</string>
-					<key>name</key>
-					<string>DCTestUniPlugin-TestModule</string>
-					<key>type</key>
-					<string>module</string>
-				</dict>
-				<dict>
-					<key>class</key>
-					<string>TestComponent</string>
+					<string>GoogleMapComponent</string>
 					<key>name</key>
 					<string>zjw-GoogleMap</string>
 					<key>type</key>

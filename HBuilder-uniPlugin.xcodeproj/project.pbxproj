@@ -186,7 +186,6 @@
 		8EED65A0198A5789000A4449 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED659F198A5789000A4449 /* Accounts.framework */; };
 		8EED65A6198A626B000A4449 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED65A5198A626B000A4449 /* MapKit.framework */; };
 		8EED65A8198A6273000A4449 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED65A7198A6273000A4449 /* OpenGLES.framework */; };
-		97A515B92450496100BC028D /* DCTestUniPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9759EDCE245048CF0076CC51 /* DCTestUniPlugin.framework */; };
 		97D33A5D24750907004DDFB5 /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 247F85DA1FA32B2C006ECAC6 /* liblibPDRCore.a */; };
 		97D33A5E24750907004DDFB5 /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDE1569215F468000588710 /* liblibWeex.a */; };
 		BA8782EB27402FAC00E400BE /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8782EA27402FAC00E400BE /* GoogleMapsBase.framework */; };
@@ -199,19 +198,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9759EDCD245048CF0076CC51 /* PBXContainerItemProxy */ = {
+		BA878325274BB10000E400BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9759EDC9245048CF0076CC51 /* DCTestUniPlugin.xcodeproj */;
+			containerPortal = 9759EDC9245048CF0076CC51 /* ZjwGoogleMapPlugin.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9759EDBE245048A40076CC51;
-			remoteInfo = DCTestUniPlugin;
-		};
-		97A515B62450495A00BC028D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9759EDC9245048CF0076CC51 /* DCTestUniPlugin.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9759EDBD245048A40076CC51;
-			remoteInfo = DCTestUniPlugin;
+			remoteInfo = ZjwGoogleMapPlugin;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -623,7 +615,7 @@
 		95D879FB2583A6A800244F71 /* WXURLRewriteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXURLRewriteProtocol.h; sourceTree = "<group>"; };
 		95D879FC2583A6A800244F71 /* WXAComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAComponent.h; sourceTree = "<group>"; };
 		95D879FD2583A6A800244F71 /* WXBridgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBridgeProtocol.h; sourceTree = "<group>"; };
-		9759EDC9245048CF0076CC51 /* DCTestUniPlugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DCTestUniPlugin.xcodeproj; path = DCTestUniPlugin/DCTestUniPlugin.xcodeproj; sourceTree = "<group>"; };
+		9759EDC9245048CF0076CC51 /* ZjwGoogleMapPlugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZjwGoogleMapPlugin.xcodeproj; path = ZjwGoogleMapPlugin/ZjwGoogleMapPlugin.xcodeproj; sourceTree = "<group>"; };
 		BA8782EA27402FAC00E400BE /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
 		BA8782EC27402FC300E400BE /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
 		BA8782ED27402FC400E400BE /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
@@ -640,7 +632,6 @@
 			files = (
 				4FE3666A254FE5FC00DCD173 /* libuchardet.a in Frameworks */,
 				BA8782EE27402FC400E400BE /* GoogleMapsCore.framework in Frameworks */,
-				97A515B92450496100BC028D /* DCTestUniPlugin.framework in Frameworks */,
 				67A9340323A8BAF6004A4DF4 /* libSDWebImage.a in Frameworks */,
 				6731F3AA232F5B97007838BC /* Photos.framework in Frameworks */,
 				6731F3A7232F5B87007838BC /* UMCommon.framework in Frameworks */,
@@ -1062,7 +1053,7 @@
 				BA8782EC27402FC300E400BE /* GoogleMapsCore.framework */,
 				BA8782EA27402FAC00E400BE /* GoogleMapsBase.framework */,
 				BA87831B27427DF400E400BE /* GooglePlaces.framework */,
-				9759EDC9245048CF0076CC51 /* DCTestUniPlugin.xcodeproj */,
+				9759EDC9245048CF0076CC51 /* ZjwGoogleMapPlugin.xcodeproj */,
 				8EED62A1198A1D13000A4449 /* HBuilder-Hello */,
 				8EED629A198A1D13000A4449 /* Frameworks */,
 				8EED6299198A1D13000A4449 /* Products */,
@@ -1371,10 +1362,10 @@
 			path = weexHeader;
 			sourceTree = "<group>";
 		};
-		9759EDCA245048CF0076CC51 /* Products */ = {
+		BA878322274BB10000E400BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9759EDCE245048CF0076CC51 /* DCTestUniPlugin.framework */,
+				BA878326274BB10000E400BE /* ZjwGoogleMapPlugin.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1393,7 +1384,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				97A515B72450495A00BC028D /* PBXTargetDependency */,
 			);
 			name = HBuilder;
 			productName = "HBuilder-Hello";
@@ -1430,8 +1420,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9759EDCA245048CF0076CC51 /* Products */;
-					ProjectRef = 9759EDC9245048CF0076CC51 /* DCTestUniPlugin.xcodeproj */;
+					ProductGroup = BA878322274BB10000E400BE /* Products */;
+					ProjectRef = 9759EDC9245048CF0076CC51 /* ZjwGoogleMapPlugin.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1442,11 +1432,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9759EDCE245048CF0076CC51 /* DCTestUniPlugin.framework */ = {
+		BA878326274BB10000E400BE /* ZjwGoogleMapPlugin.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = DCTestUniPlugin.framework;
-			remoteRef = 9759EDCD245048CF0076CC51 /* PBXContainerItemProxy */;
+			path = ZjwGoogleMapPlugin.framework;
+			remoteRef = BA878325274BB10000E400BE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1529,14 +1519,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		97A515B72450495A00BC028D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DCTestUniPlugin;
-			targetProxy = 97A515B62450495A00BC028D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		67E9CDCD22968D2E0076E0FB /* Localizable.strings */ = {
