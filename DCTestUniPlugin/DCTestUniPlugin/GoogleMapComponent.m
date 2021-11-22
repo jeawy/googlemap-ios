@@ -72,11 +72,11 @@
         }
     }
 }
-/*
+
 - (UIView *)loadView {
     return [GMSMapView new];
 }
- */
+
 -(UIImage *) imageWithView:(UIView *)view
 {
     UIGraphicsBeginImageContext(view.bounds.size);

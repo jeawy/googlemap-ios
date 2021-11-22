@@ -11,8 +11,8 @@
 		9756FDC32474031D0059BC12 /* TestPluginProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9756FDC12474031D0059BC12 /* TestPluginProxy.m */; };
 		97A515BC2450499200BC028D /* TestModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A515BA2450499200BC028D /* TestModule.h */; };
 		97A515BD2450499200BC028D /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A515BB2450499200BC028D /* TestModule.m */; };
-		97A515C024518A0900BC028D /* TestComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A515BE24518A0900BC028D /* TestComponent.h */; };
-		97A515C124518A0900BC028D /* TestComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A515BF24518A0900BC028D /* TestComponent.m */; };
+		97A515C024518A0900BC028D /* GoogleMapComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A515BE24518A0900BC028D /* GoogleMapComponent.h */; };
+		97A515C124518A0900BC028D /* GoogleMapComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A515BF24518A0900BC028D /* GoogleMapComponent.m */; };
 		BA8782E327402E8D00E400BE /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8782E227402E8D00E400BE /* GoogleMapsBase.framework */; };
 		BA8782E627402EDF00E400BE /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8782E427402EDF00E400BE /* GoogleMapsCore.framework */; };
 		BA8782E727402EE000E400BE /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8782E527402EDF00E400BE /* GoogleMaps.framework */; };
@@ -40,8 +40,8 @@
 		9759EDC2245048A40076CC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97A515BA2450499200BC028D /* TestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
 		97A515BB2450499200BC028D /* TestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
-		97A515BE24518A0900BC028D /* TestComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestComponent.h; sourceTree = "<group>"; };
-		97A515BF24518A0900BC028D /* TestComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestComponent.m; sourceTree = "<group>"; };
+		97A515BE24518A0900BC028D /* GoogleMapComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMapComponent.h; sourceTree = "<group>"; };
+		97A515BF24518A0900BC028D /* GoogleMapComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMapComponent.m; sourceTree = "<group>"; };
 		BA8782E227402E8D00E400BE /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = "../../../GoogleMaps-5.0.0/Base/Frameworks/GoogleMapsBase.framework"; sourceTree = "<group>"; };
 		BA8782E427402EDF00E400BE /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = "../../../GoogleMaps-5.0.0/Maps/Frameworks/GoogleMapsCore.framework"; sourceTree = "<group>"; };
 		BA8782E527402EDF00E400BE /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../../GoogleMaps-5.0.0/Maps/Frameworks/GoogleMaps.framework"; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 				9759EDC2245048A40076CC51 /* Info.plist */,
 				97A515BA2450499200BC028D /* TestModule.h */,
 				97A515BB2450499200BC028D /* TestModule.m */,
-				97A515BE24518A0900BC028D /* TestComponent.h */,
-				97A515BF24518A0900BC028D /* TestComponent.m */,
+				97A515BE24518A0900BC028D /* GoogleMapComponent.h */,
+				97A515BF24518A0900BC028D /* GoogleMapComponent.m */,
 				9756FDC02474031D0059BC12 /* TestPluginProxy.h */,
 				9756FDC12474031D0059BC12 /* TestPluginProxy.m */,
 			);
@@ -153,7 +153,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97A515C024518A0900BC028D /* TestComponent.h in Headers */,
+				97A515C024518A0900BC028D /* GoogleMapComponent.h in Headers */,
 				9756FDC22474031D0059BC12 /* TestPluginProxy.h in Headers */,
 				97A515BC2450499200BC028D /* TestModule.h in Headers */,
 			);
@@ -230,7 +230,7 @@
 			files = (
 				97A515BD2450499200BC028D /* TestModule.m in Sources */,
 				9756FDC32474031D0059BC12 /* TestPluginProxy.m in Sources */,
-				97A515C124518A0900BC028D /* TestComponent.m in Sources */,
+				97A515C124518A0900BC028D /* GoogleMapComponent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
